@@ -43,7 +43,7 @@ if __name__ == "__main__":
         opt = input("> ")
 ```
 
-When running it on the server it gives us 3 options: Give it an input for it to encrypt, get an encrypted flag, or quit. \n
+When running it on the server it gives us 3 options: Give it an input for it to encrypt, get an encrypted flag, or quit. 
 Note that since it generates a Random integer on each initialization of the script, the encrypted flag output is also randomized for each session.
 Here are what some of them look like:
 ```
@@ -99,7 +99,6 @@ Ex: aabc --> ccab
 
 So now that we know how the encryption algorithm works we can write a script that decrypts the encrypted flag.
 ```
-from random import randint
 
 def main():
     flag = input("input the flag you got\n")
