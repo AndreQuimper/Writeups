@@ -93,7 +93,7 @@ enc = "".join(list(map(lambda c: charsn[chars.index(c)], data)))
     return enc
 ```
 Now this line is a little bit more complex.
-What it's doing is taking every character in the input (data) and getting its index in the sorted but not shifter array and replacing it with the character in that index from the shifted array. 
+What it's doing is taking every character in the input (data) and getting its index in the sorted but not shifted array and replacing it with the character in that index from the shifted array. 
 Since same characters always map out to the same index they will be replaced by the same character.
 Ex: aabc --> ccab
 
