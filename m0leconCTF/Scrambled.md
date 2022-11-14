@@ -129,7 +129,9 @@ main()
 ```
 Ok so how does our decryption algorithm work?
 Since 50 is not a very significant number we can just do a for loop for all the possible cases, we could've written a function that automatically determined the shift but for this challenge it was not necessary.
-`for shift in range(len(flag)):`
+```
+for shift in range(len(flag)):
+```
 
 Then we generate the same lists that the original had by sorting the same way the encryption algorithm did (by most used character to least) and then shifting it the same amount but to the RIGHT. This will give us both the shifted and unshifted lists they used to encrypt our flag.
 ```
@@ -158,7 +160,9 @@ dec = "".join(list(map(lambda c: flagunshift[flagsort.index(c)], flag)))
 This reverses what the encryption algorithm did by getting the shifted letter and replacing it by what it would be in the unshifted version.
 
 Running the script and providing an encrypted flag gives us our flag!
-`ptm{fr3quency_b4seD_c4esar_1s_n0t_good}`
+```
+ptm{fr3quency_b4seD_c4esar_1s_n0t_good}
+```
 
 Feel free to try all three of the example encrypted flags I provided earlier and you'll see that they all return the flag!
 
